@@ -1,10 +1,10 @@
-# DxMint Token Verification
+# Marksman AI Token Verification
 
 The following document will share details on how to verify code for your generated token
 
 ### BSCScan, EtherScan or Similar
 1. Start by first navigating to the verification section of BSCScan (https://bscscan.com/verifyContract) (Or for your chain)
-2. Enter your DxMint generated token address 
+2. Enter your Marksman AI generated token address 
 3. For Compiler Type select "Solidity (Single File)"
 4. For Compiler Version select "v0.8.7+commit.e28d00a7"
 5. For Open Source License Type select "3) MIT License (MIT)"
@@ -27,19 +27,19 @@ The following document will share details on how to verify code for your generat
 For Core chain token verification, follow upto step 9 and the contract will be verified. 
 This includes for DxDividend Token as well.
 
-#### DxDividend Token Verification
+#### Marksman AI Token Verification
 1. Make sure the IterableMapping library is verified first. Check if the contract address for IterableMapping is verified on the chain-specific blockexplorer. If not, verify using the steps mentioned above. Copy the contract code from the IterableMapping.txt file where required, select the optimization field to "Yes" like before. There will be no Bytecode error as there are no contract arguements to take care of.
 2. To verify the token, same exact steps required for other token verification except for an additional step. In the Contract Library Address section, before you verify and publish, add the Library_1 Name "IterableMapping" and its address that was deployed, contract address is 0xb5ab898D9531c55Faf5a2B48e285EcE9790a9a5c and will be same accross all chains.
 3. Make sure the runs value is correct under the Misc Settings/Runs (Optimizer) if optmizer was enabled for value different to 200.
 
 
 Note:
-For DxStandard, DxBurn and DxFee tokens:
+For Marksman AI, DxBurn and DxFee tokens:
     Compiler Version: v0.8.7
     Optimization -> yes
     Runs -> 200
 
-For DxDividend tokens:
+For Marksman AI tokens:
     Compiler Version: v0.8.14
     Optimization -> yes
     Runs -> 5
